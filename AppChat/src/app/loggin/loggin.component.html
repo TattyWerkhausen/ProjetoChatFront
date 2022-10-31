@@ -1,0 +1,24 @@
+<div class="div-curta">
+  <ng-container>
+    <div [formGroup]="formulario">
+      <div class="col-6 div-logar">
+        <p>Logar</p>
+        <div class="div-inputs-login">
+          <input type="text" formControlName="nome" placeholder="nome" />
+          <input type="password" formControlName="senha" placeholder="senha" />
+
+          <button class="btn-ok" (click)="buscarUsuario()">Ok</button>
+          <div>
+            <div class="usuario-inexistente" *ngIf="!usuarioEncontrado">
+              <h4 id="usuario-inexistente">Usuário não encontrado</h4>
+              <!-- <a href="#">Recupera chave</a> -->
+              <a href="/cadastro/" target="_blank"
+                ><button class="botao-cadastro">Cadastrar-se</button></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+</div>

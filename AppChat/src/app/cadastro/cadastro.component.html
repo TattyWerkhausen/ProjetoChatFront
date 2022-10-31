@@ -1,0 +1,47 @@
+<div>
+  <form [formGroup]="formulario">
+    <table class="table table-bordered">
+      <tr>
+        <th>Nome:</th>
+        <td>
+          <input type="text" name="nome" formControlName="nome" />
+        </td>
+      </tr>
+      <tr>
+        <th>Sobrenome:</th>
+        <td>
+          <input type="text" formControlName="sobrenome" />
+        </td>
+      </tr>
+      <tr>
+        <th>Cpf:</th>
+        <td>
+          <input type="text" formControlName="cpf" />
+        </td>
+      </tr>
+      <tr>
+        <th>Email:</th>
+        <td>
+          <input type="email" formControlName="email" />
+        </td>
+      </tr>
+      <tr>
+        <th>Telefone:</th>
+        <td>
+          <input type="text" name="telefone" formControlName="telefone" />
+        </td>
+      </tr>
+      <tr>
+        <th>Data Nascimento:</th>
+        <td><input type="date" formControlName="dataNascimento" /></td>
+      </tr>
+      <tr>
+        <th>Senha:</th>
+        <td>
+          <input type="password" formControlName="senha" />
+        </td>
+      </tr>
+    </table>
+  </form>
+  <button class="btn-registrar" (click)="cadastrando()">Registrar</button>
+</div>

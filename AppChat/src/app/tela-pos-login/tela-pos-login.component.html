@@ -1,0 +1,57 @@
+<div>
+  <div class="col-12" style="position: fixed">
+    <div class="col-6 header" style="display: inline-block">
+      <p id="meu-contato">
+        <img id="icone-meu-perfil" src="assets/imagens/perfil.png" />
+        Meu Contato
+      </p>
+    </div>
+    <div class="col-6 header" style="float: right">
+      <p id="meu-contato">
+        <img id="icone-meu-perfil" src="assets/imagens/perfil.png" />
+        Contato aberto
+      </p>
+    </div>
+  </div>
+  <div class="col-6" style="display: inline-block; margin-top: 80px">
+    <div [formGroup]="formulario" class="div-busca">
+      <input
+        type="text"
+        formControlName="nome"
+        id="input-busca"
+        placeholder="Buscar"
+      />
+    </div>
+    <div *ngIf="!usuarioAchado() && foiRealizadoUmaBusca">
+      <p>Usuario indefinido</p>
+    </div>
+    <div class="div-busca-ok" *ngIf="usuarioAchado()">
+      <a class="link-conversar">
+        <p>{{ usuarioEncontrado?.nome }}</p>
+      </a>
+    </div>
+    <div (click)="selecionarUsuarioParaEnviarMensagem(usuario.id)" *ngFor="let usuario of usuarios">
+      <div class="link-conversar">
+        <table class="table table-hover">
+          <tbody>
+            <tr>
+              <td class="td-icone-nome">
+                <img id="icone-perfil" src="assets/imagens/perfil.png" />
+                <p class="nome">{{ usuario.nome }}</p>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  <div class="col-6 segunda-div" >
+    <img id="img-not" src="/assets/imagens/not.png" />
+    <div *ngIf="podeExibirConversa">
+      <div class="exibir-conversa">
+        <app-exibir-mensagens [usuarioId]="usuarioLogadoId" [usuarioRecebeMensagemId]="usuarioRecebeMensagemId"></app-exibir-mensagens>
+        <app-mensagem [usuarioId]="usuarioLogadoId" [usuarioRecebeMensagemId]="usuarioRecebeMensagemId"></app-mensagem>
+      </div>
+    </div>
+  </div>
+</div>

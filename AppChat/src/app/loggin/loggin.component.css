@@ -1,0 +1,39 @@
+.div-logar{
+  background-color: aquamarine;
+  width: 470px;
+  height: 141px;
+  margin-left: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.div-logar p{
+  margin-left: 192px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.div-inputs-login input{
+  margin-left: 17px;
+  margin-top: 10px;
+}
+.usuario-inexistente{
+  background-color: aquamarine;
+  height: 100px;
+}
+#usuario-inexistente{
+  margin-left: 99px;
+  margin-top: 15px;
+}
+.botao-cadastro{
+  display: block;
+  margin-top: 15px;
+  margin-left: 134px;
+  text-decoration: none;
+}
+.div-logado{
+  margin-top: 15px;
+}
+.btn-acesso{
+  width: 120px;
+  background: border-box;
+  margin-left: 328px;
+}

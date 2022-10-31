@@ -1,0 +1,57 @@
+.link-conversar{
+  text-decoration: none;
+}
+.td-icone-nome{
+  display: inline-flex;
+  width: 630px;
+  height: 70px;
+}
+#icone-perfil{
+  width: 40px;
+}
+.nome{
+  height: 70px;
+  margin-left: 50px;
+}
+.btn-conversar{
+margin-top: 15px;
+}
+.div-busca{
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+#icone-meu-perfil{
+  width: 30px;
+  margin-left: 30px;
+}
+#input-busca{
+  width: 500px;
+  border-radius: 6px;
+  margin-left: 56px;
+  border: ridge;
+}
+.header{
+  background-color: #52fbc29c;
+  height: 66px;
+}
+.segunda-div{
+float: right;
+margin-top: 65px;
+border: 1px solid black;
+min-height: 560px;
+background-color:#7fffd461;;
+}
+.div-busca-ok{
+  width: 300px;
+  margin-left: 54px;
+  border: ridge;
+  border-radius: 8px;
+}
+#img-not{
+  margin-left: 100px;
+  margin-top: 50px;
+  opacity: 0.5;
+}
+.exibir-conversa{
+  background-color: aliceblue;
+}
